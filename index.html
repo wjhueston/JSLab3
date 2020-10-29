@@ -2,15 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href="lab3.css" rel ="stylesheet">
     <title>Books</title>
 </head>
 <body>
-<script src="code.js"></script>
-<button onclick="AddBook()">Add a late book</button>
-<button onclick="AddDVD()">Add a late DVD</button>
-<button onclick="TotalOut()">Display Fees</button><br><br>
-<form action="pizza.html">
-    <input type="submit" value="Because I'm lazy, click here to go to the Pizza App"/>
-</form>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="code.js"></script>
+    <label for="lateBooks">How many late books?</label>
+    <input type="number" id="lateBooks"><br><br>
+    <label for="lateDVDs">How many late DVDs?</label>
+    <input type="number" id="lateDVDs"><br><br>
+    <button id="calcFees">Display Fees</button><br><br>
+    <p class="hideFees">You owe $<span class="totalFees"></span>.</p>
+    <form action="pizza.html">
+        <input type="submit" value="Because I'm lazy, click here to go to the Pizza App"/>
+    </form>
 </body>
 </html>

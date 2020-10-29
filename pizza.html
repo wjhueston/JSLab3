@@ -2,14 +2,74 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href="lab3.css" rel ="stylesheet">
     <title>Pizza</title>
 </head>
 <body>
-<script src="code.js">
-</script>
-<button onclick="TotalCoworkers()">Pizza Math</button><br><br>
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script src="code.js"></script>
+<label for="pizzaEaters">How many people want pizza?</label>
+<input type="number" id="pizzaEaters" max="8" min="2"><br><br>
+<button id="getCoworkerCount">Next</button><br><br>
+<p class = "coworkerOne">
+    <label for="coworkerOneInput">
+        How many toppings does coworker one want?
+    </label>
+    <input type="number" id="coworkerOneInput"><br><br>
+</p>
+<p class = "coworkerTwo">
+    <label for="coworkerTwoInput">
+        How many toppings does coworker two want?
+    </label>
+    <input type="number" id="coworkerTwoInput"><br><br>
+</p>
+<p class = "coworkerThree">
+    <label for="coworkerThreeInput">
+        How many toppings does coworker three want?
+    </label>
+    <input type="number" id="coworkerThreeInput"><br><br>
+</p>
+<p class = "coworkerFour">
+    <label for="coworkerFourInput">
+        How many toppings does coworker four want?
+    </label>
+    <input type="number" id="coworkerFourInput"><br><br>
+</p>
+<p class = "coworkerFive">
+    <label for="coworkerFiveInput">
+        How many toppings does coworker five want?
+    </label>
+    <input type="number" id="coworkerFiveInput"><br><br>
+</p>
+<p class = "coworkerSix">
+    <label for="coworkerSixInput">
+        How many toppings does coworker six want?
+    </label>
+    <input type="number" id="coworkerSixInput"><br><br>
+</p>
+<p class = "coworkerSeven">
+    <label for="coworkerSevenInput">
+        How many toppings does coworker seven want?
+    </label>
+    <input type="number" id="coworkerSevenInput"><br><br>
+</p>
+<p class = "coworkerEight">
+    <label for="coworkerEightInput">
+        How many toppings does coworker eight want?
+    </label>
+    <input type="number" id="coworkerEightInput"><br><br>
+</p>
+<button id="calcPizzaCost">Display Pizza Cost</button><br><br>
+<p class = "finalOne">Coworker one owes $<span class="coworkerOneOutput"></span></p>
+<p class = "finalTwo">Coworker two owes $<span class="coworkerTwoOutput"></span></p>
+<p class = "finalThree">Coworker three owes $<span class="coworkerThreeOutput"></span></p>
+<p class = "finalFour">Coworker four owes $<span class="coworkerFourOutput"></span></p>
+<p class = "finalFive">Coworker five owes $<span class="coworkerFiveOutput"></span></p>
+<p class = "finalSix">Coworker six owes $<span class="coworkerSixOutput"></span></p>
+<p class = "finalSeven">Coworker seven owes $<span class="coworkerSevenOutput"></span></p>
+<p class = "finalEight">Coworker eight owes $<span class="coworkerEightOutput"></span></p>
 <form action="index.html">
-    <input type="submit" value="Because I'm lazy, click here to go to the Books App" />
+    <input type="submit" value="Because I'm lazy, click here to go to the Late Fees App" />
 </form>
 </body>
 </html>
