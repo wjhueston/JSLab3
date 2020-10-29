@@ -60,6 +60,7 @@ $(document).ready(
                 coworkerNumber++;
                 totalCoworkers--;
             }
+            $("#calcPizzaCost").show()
         }
             function PizzaMath(){
                 var coworkerOneDues = cheesePricePerCoworker + (parseInt($("#coworkerOneInput").val()) * 1.25)
